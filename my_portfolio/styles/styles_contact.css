@@ -1,0 +1,85 @@
+body {
+    background-color: #121212;
+    color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #00bcd4;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+form {
+    margin-top: 30px;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background: #00bcd4;
+    color: #121212;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #028e99;
+    color: #fff;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #00bcd4;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #028e99;
+}
+
+button {
+    display: inline-block;
+    margin: 15px 10px;
+    padding: 10px 20px;
+    background: #00bcd4;
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #028e99;
+    color: #fff;
+}

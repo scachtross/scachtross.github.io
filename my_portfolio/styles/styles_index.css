@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: black;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.nav-bar  a {
+    text-decoration: none;
+    color: bisque;
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.nav-bar a:hover {
+    color: #0000ff;
+    border-bottom: 2px #ffff00 solid;
+}
+
+.main {
+    height: 100vh;
+    background: url('/assets/my_photo.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.intro {
+    max-width: 500px;
+}
+
+.intro h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.intro h2 {
+    color: aquamarine;
+    font-size: 40px;
+}
+
+.intro p {
+    font-size: 20px;
+    margin: 20px 0 40px;
+}
+
+.intro .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.buttons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.buttons a:nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+}
+
+.buttons a:hover {
+    background: wheat;
+}
+
+.socials-link {
+    position: absolute;
+    bottom: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials-link a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    color: #00abf0;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.socials-link a:hover {
+    color: wheat;
+}

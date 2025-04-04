@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles_contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <title>Contact Me</title>
+</head>
+<body>
+    <script>
+        // Initialize EmailJS
+        emailjs.init("BW4dscY8ps_HAfeuU"); 
+    
+        function sendEmail() {
+            const serviceID = "service_c43gjw7"; 
+            const templateID = "template_7vbh4cz"; 
+    
+            emailjs.sendForm(serviceID, templateID, "#contactForm")
+                .then(() => {
+                    alert("Message sent successfully!");
+                }, (error) => {
+                    alert("Failed to send message. Error: " + JSON.stringify(error));
+                });
+        }
+    </script>    
+    <div class="container">
+        <h1>Contact Me</h1>
+        <p>Feel free to reach out using the form below or connect with me on social media.</p>
+        <form id="contactForm">
+            <input type="text" name="user_name" placeholder="Your Name" required>
+            <input type="email" name="user_email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="button" onclick="sendEmail()">Send Message</button>
+        </form>
+        
+        <div class="social-icons">
+            <a href="https://github.com/scachtross/" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/chris-njurai/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://t.me/bossmann777" target="_blank"><i class='bx bxl-telegram'></i></a>
+            <a href="mailto:chrisnjurai777@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
+        </div>
+    </div>
+</body>
+</html>
+
