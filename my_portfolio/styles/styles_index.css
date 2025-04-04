@@ -38,7 +38,7 @@ body {
 
 .main {
     height: 100vh;
-    background: url('/assets/my_photo.jpg') no-repeat;
+    background: url('/my_portfolio/assets/my_photo.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
